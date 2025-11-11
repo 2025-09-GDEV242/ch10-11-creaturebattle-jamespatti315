@@ -41,10 +41,18 @@ public abstract class Creature
     /**
      * Allows a creature to determine how much damage it is causing in this round of battle
      * @return a value between 1 and str to be used to cause damage to another creature
+     * 
+     * ok man randomizer helping so hard!
+     * 
      */
     public int attack(){
         // TODO: implement a damage method roll dice and do damage!
-        return 0;
+        int damageToReturn;
+        damageToReturn = Randomizer.nextInt(str);
+        
+        
+        
+        return damageToReturn;
     }
     
     
@@ -53,8 +61,10 @@ public abstract class Creature
      * @return true when current hit point level is greater than zero
      */
     public boolean isAlive() {
-        // TODO: implement a method to report if the creature yet lives
-        return false; //change this
+        // TODO:  ok should be good.
+        
+        
+        return (hp > 0); //change this
     }
     
     /**
@@ -64,7 +74,14 @@ public abstract class Creature
      */
     public boolean isKnockedOut() {
         //TODO: implement a method to report if the creature has been killed
-        return false; //change this
+        boolean dead;
+        if (hp <= 0){
+            dead = true;
+        }
+        else{
+            dead = false;
+        }
+        return dead; //changed!
     }
     
     
@@ -75,6 +92,7 @@ public abstract class Creature
      */
     public void takeDamage(int damage) {
         // TODO: implement this
+        hp = hp-damage;
     }
     
     /**
