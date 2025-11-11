@@ -9,6 +9,10 @@
  * 
  * @author Crosbie
  * @version 2025-04 v1.0
+ * 
+ * 
+ * @author James Patti
+ * @version 2025-10 new version.
  */
 // we will learn what the abstract keyword does in a later chapter
 public abstract class Creature
@@ -39,7 +43,7 @@ public abstract class Creature
      * @return a value between 1 and str to be used to cause damage to another creature
      */
     public int attack(){
-        // TODO: implement a damage method
+        // TODO: implement a damage method roll dice and do damage!
         return 0;
     }
     
@@ -56,6 +60,7 @@ public abstract class Creature
     /**
      * Is this creature knockedOut?
      * @return true when current hit point level is less than or equal to zero
+     * so hp == 0 or less
      */
     public boolean isKnockedOut() {
         //TODO: implement a method to report if the creature has been killed
@@ -72,4 +77,13 @@ public abstract class Creature
         // TODO: implement this
     }
     
+    /**
+     * ok starting, lets just go basic as basic with a getter for strength;
+     * this should return the strength of a creature, 
+     * 
+     */
+    public int returnStrength(){
+        
+        return str;
+    }
 }
