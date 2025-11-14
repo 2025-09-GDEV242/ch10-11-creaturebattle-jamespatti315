@@ -6,3 +6,10 @@
  
  
  worked on 11/10/25- to next weeks monday
+ 
+ 
+ formula
+ 
+ 
+ randomizer.nextInt(maxstrength-min strength)+ min strength)
+ then agian but hp values for  damage!
