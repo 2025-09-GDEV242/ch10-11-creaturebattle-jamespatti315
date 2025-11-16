@@ -1,22 +1,34 @@
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
- * Write a description of class COMBAT here.
+ * Write a description of class Combat here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author James Patti
+ * @ 11/16/25 
+ * 
+ * 
+ * ok somehow get two fucking armies in array list to fight here.
+ * 
+ * 
+ * ok fuck this fuck this fuck this fuck this.
+ * 
+ * 
  */
-public class COMBAT
+public class Combat
 {
     // instance variables - replace the example below with your own
-    private int x;
+     ArrayList<Human> humans;
+     ArrayList<BadGuys> badGuys;
+     
+         private static Random rand = new Random();
 
     /**
-     * Constructor for objects of class COMBAT
+     * Constructor for  a factory of the armies, 
      */
-    public COMBAT()
+    public void  ArmyMaker()
     {
-        // initialise instance variables
-        x = 0;
+ 
     }
 
     /**
