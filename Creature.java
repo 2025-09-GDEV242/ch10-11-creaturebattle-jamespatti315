@@ -37,6 +37,28 @@ public abstract class Creature
        max_hp = hp;
     }
     
+    /**ok making one of two new creature methods to actually modify and alter hp and str.
+     * first is  modify hp method which will alter a creature hp when needed.
+     * 
+     * @param int statChange,  will be same other method after this.
+     */
+    
+    protected void alterHP(int statChange){
+        hp += statChange;
+    }
+    
+     /**ok making one of two new creature methods to actually modify and alter hp and str.
+     * first is  modify hp method which will alter a creature str when needed.
+     * 
+     * @param int statChange,  will be same other method after this.
+     */
+    
+     protected void alterStr(int statChange){
+        str += statChange;
+    }
+    
+    
+    
     
     /**
      * Allows a creature to determine how much damage it is causing in this round of battle
