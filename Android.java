@@ -60,6 +60,28 @@ public class Android extends Creature
     
     /**
      * here will be the android self-destruct ability, essentially when hp below a certain threshold, 
+     * the bot detonates, damaging itself but hopefully wiping enemy in desperation attack, 
+     * 
+     * @param none,
+     * @returns two potentials, nothing if fails...but a explosion damage if activated~ overwriting normal damage calculations
+     * 
+     * 
      */
     
+    public int selfDestruct(){
+        if(getHP() <= 10){
+             System.out.println("Android is attempting to self-destruct!");
+             
+             int selfDestructDamage = Randomizer.nextInt(20)+10;
+             
+             //android succeeds self-destruct
+             
+             alterHP(-getHP());
+             
+             return selfDestructDamage;
+        }
+        return 0; //if fails self-destruct.
+    }
+
+        
 }

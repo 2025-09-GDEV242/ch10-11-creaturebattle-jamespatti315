@@ -37,6 +37,27 @@ public abstract class Creature
        max_hp = hp;
     }
     
+    
+    /** ok need a getter for both strength and health for anything in this to  work! i
+     * 
+     * @returns hp 
+     */
+    
+    public int getHP(){
+        
+        return hp;
+    }
+    
+    
+    /** returns strength so inheretied children can method properly
+     * @returns str
+     */
+    
+    public int getStr(){
+        return str;
+    }
+    
+    
     /**ok making one of two new creature methods to actually modify and alter hp and str.
      * first is  modify hp method which will alter a creature hp when needed.
      * 
